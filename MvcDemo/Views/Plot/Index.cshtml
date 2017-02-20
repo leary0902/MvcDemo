@@ -1,0 +1,84 @@
+﻿<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var count = 0;
+        $(".click").mouseenter(function () {
+            $(".play").css("position", "relative");
+        });
+        $(".click").click(function () {
+            if (count % 2 == 0) {
+                $(".play").animate({ left: '+=500px' });
+            }
+            else {
+                $(".play").animate({ left: '-=500px' });
+            }
+            ++count;
+        });
+        $(".click").mouseleave(function () {
+            $(".play").css("position", "static");
+        });
+    });
+</script>
+
+<br />
+<button class="click">开始动画</button>
+<p>默认情况下，所有 HTML 元素的位置都是静态的，并且无法移动。如需对位置进行操作，记得首先把元素的 CSS position 属性设置为 relative、fixed 或 absolute。</p>
+<div class="play" style="background:#98bf21;height:100px;width:100px;">
+</div>
+
+<br />
+
+@*<script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts-all-3.js"></script>*@
+<script type="text/javascript" src="~/Scripts/echarts-all-3.js"></script>
+<div id="main" style="height:400px;"></div>
+<script type="text/javascript">
+    // 基于准备好的dom，初始化echarts实例
+    var mainChart = echarts.init(document.getElementById('main'));
+
+    // 指定图表的配置项和数据
+    var option = {
+        title: {
+            text: 'ECharts 入门示例'
+        },
+        tooltip: {
+            trigger: 'axis' //出现游标，该列下所有坐标轴所对应的数据
+        },
+        legend: {
+            data: ['Demo']
+        },
+        xAxis: {
+            scale: true, //根据数据范围，显示动态区间
+            splitLine: {
+                show: false //不显示网格线
+            }
+        },
+        yAxis: {
+            min: 0,
+            max: 1
+        },
+        series: [{
+            name: 'Demo',
+            type: 'line',
+            showSymbol: false, //去除小圆点
+            hoverAnimation: false, //禁止鼠标悬浮时放大
+            data: [[1, 0.5], [2, 0.4], [3, 0.6], [4, 0.2], [5, 0.1], [6, 0.5]]
+        }],
+        animationDuration: 100 //动画持续时间
+    };
+
+    // 使用刚指定的配置项和数据显示图表。
+    mainChart.setOption(option);
+
+    var x = 0;
+    setInterval(function () {
+        var data = [];
+        for(var i=0; i<6; ++i){
+            data.push([++x, Math.random()]);
+        }
+        mainChart.setOption({
+            series: [{
+                data: data
+            }]
+        });
+    }, 1000);
+</script>

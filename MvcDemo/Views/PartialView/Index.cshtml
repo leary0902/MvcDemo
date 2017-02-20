@@ -1,0 +1,27 @@
+﻿<script src="~/Scripts/jquery-1.10.2.js"></script>
+<h2>Before PartialView</h2>
+<hr />
+<div id="header"></div>
+<hr />
+<h2>After PartialView</h2>
+<script language="javascript">
+    setInterval(LoadAction, 1000);
+    function LoadAction()
+    {
+        var time = new Date();
+        var test = 2;
+        $.ajax({
+            type: "POST",
+            url: '@Url.Action("ChildAction", "PartialView")',
+            data: { time: time.toGMTString(), num: test},
+            datatype: "json",
+            success: function (data) {
+                $('#header').html(data);
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+                alert(errorThrown);
+            }
+
+        });
+    }
+</script>
