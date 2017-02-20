@@ -1,0 +1,149 @@
+# User-specific files  
+*.suo  
+*.user  
+*.sln.docstates  
+  
+# Build results  
+  
+MvcDemo/[Dd]ebug/  
+MvcDemo/[Rr]elease/  
+MvcDemo/x64/  
+MvcDemo/build/  
+MvcDemo/[Bb]in/  
+MvcDemo/[Oo]bj/  
+  
+# MSTest test Results  
+MvcDemo/[Tt]est[Rr]esult*/  
+MvcDemo/[Bb]uild[Ll]og.*  
+  
+*_i.c  
+*_p.c  
+*.ilk  
+*.meta  
+*.obj  
+*.pch  
+*.pdb  
+*.pgc  
+*.pgd  
+*.rsp  
+*.sbr  
+*.tlb  
+*.tli  
+*.tlh  
+*.tmp  
+*.tmp_proj  
+*.log  
+*.vspscc  
+*.vssscc  
+MvcDemo/.builds  
+*.pidb  
+*.log  
+*.scc  
+  
+# Visual C++ cache files  
+MvcDemo/ipch/  
+*.aps  
+*.ncb  
+*.opensdf  
+*.sdf  
+*.cachefile  
+  
+# Visual Studio profiler  
+*.psess  
+*.vsp  
+*.vspx  
+  
+# Guidance Automation Toolkit  
+*.gpState  
+  
+# ReSharper is a .NET coding add-in  
+MvcDemo/_ReSharper*/  
+*.[Rr]e[Ss]harper  
+  
+# TeamCity is a build add-in  
+MvcDemo/_TeamCity*  
+  
+# DotCover is a Code Coverage Tool  
+*.dotCover  
+  
+# NCrunch  
+*.ncrunch*  
+MvcDemo/.*crunch*.local.xml  
+  
+# Installshield output folder  
+MvcDemo/[Ee]xpress/  
+  
+# Click-Once directory  
+MvcDemo/publish/  
+  
+# Publish Web Output  
+*.Publish.xml  
+*.pubxml  
+  
+# NuGet Packages Directory  
+# Enable nuget packages restore when building  
+!packages/  
+packages/*  
+!packages/repositories.config  
+  
+# Windows Azure Build Output  
+MvcDemo/csx  
+*.build.csdef  
+  
+# Windows Store app package directory  
+MvcDemo/AppPackages/  
+  
+# Others  
+MvcDemo/sql/  
+*.Cache  
+MvcDemo/ClientBin/  
+MvcDemo/[Ss]tyle[Cc]op.*  
+~$*  
+*~  
+*.dbmdl  
+*.[Pp]ublish.xml  
+*.pfx  
+*.publishsettings  
+  
+# RIA/Silverlight projects  
+MvcDemo/Generated_Code/  
+  
+#Visual Studio LightSwitch  
+MvcDemo/_Pvt_Extensions/  
+MvcDemo/GeneratedArtifacts/  
+MvcDemo/ServiceConfiguration.cscfg  
+MvcDemo/ModelManifest.xml  
+MvcDemo/generated.parameters.xml  
+## TODO: Comment the next line if you want version controls the generated client .xap file  
+*.Client.xap  
+  
+# Backup & report files from converting an old project file to a newer  
+# Visual Studio version. Backup files are not needed, because we have git ;-)  
+MvcDemo/_UpgradeReport_Files/  
+MvcDemo/Backup*/  
+MvcDemo/UpgradeLog*.XML  
+MvcDemo/UpgradeLog*.htm  
+  
+# SQL Server files  
+MvcDemo/App_Data/*.mdf  
+MvcDemo/App_Data/*.ldf  
+  
+# =========================  
+# Windows detritus  
+# =========================  
+  
+# Windows image file caches  
+MvcDemo/Thumbs.db  
+MvcDemo/ehthumbs.db  
+  
+# Folder config file  
+MvcDemo/Desktop.ini  
+  
+# Recycle Bin used on file shares  
+$RECYCLE.BIN/  
+  
+# Mac crap  
+MvcDemo/.DS_Store  
+  
+# VisualStudioCode  
+MvcDemo/.vscode  
